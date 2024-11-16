@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.container {
+    width: 400px;
+    background-color: #E6F0FA;
+    /* Light blue */
+    border-radius: 12px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header h2 {
+    font-size: 18px;
+    color: #1C1C1C;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Center align header */
+}
+
+/* Summary Section */
+.summary-section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    /* Increased padding */
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    /* Ensure summary content scrolls if too long */
+    max-height: 200px;
+    /* Restrict max height */
+}
+
+.summary-section::-webkit-scrollbar {
+    width: 6px;
+    /* Narrow scrollbar width */
+}
+
+.summary-section::-webkit-scrollbar-thumb {
+    background: #D0D0D0;
+    /* Gray thumb */
+    border-radius: 3px;
+}
+
+.summary-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    /* Improved readability */
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.summary-meta {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777777;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    justify-content: center;
+    /* Center the entire input container */
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+    border-radius: 24px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Make input container full width */
+    max-width: 350px;
+    /* Restrict maximum width */
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    /* Make input take up available space */
+    font-size: 14px;
+    padding: 8px;
+    color: #555;
+}
+
+.input-container button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    /* Remove padding from button */
+}
+
+.input-container img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    /* Add some spacing between input and icon */
+}
+
+
+/* Back Button */
+.back-button {
+    width: 100%;
+    padding: 12px 0;
+    /* Slightly increased padding */
+    background-color: #3B82F6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    /* Make text bolder */
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.back-button:hover {
+    background-color: #2563EB;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Bar Placeholder Styling */
+.input-container input::placeholder {
+    color: #999999;
+    font-style: italic;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarizer Result</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h2>Hello User, Welcome to Asum.ly</h2>
+        </header>
+
+        <!-- Summary Section -->
+        <section class="summary-section">
+            <div class="summary-content">
+                <p><strong>Title:</strong> <span id="summary-title">Loading...</span></p>
+                <p><strong>Source:</strong> <span id="summary-source">Loading...</span></p>
+                <p><strong>Summary:</strong></p>
+                <p id="summary-text">Loading...</p>
+                <div class="summary-meta">
+                    <p id="summary-date">Loading...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Input Section -->
+        <section class="input-section">
+            <div class="input-container">
+                <input type="text" placeholder="Summarize a Link or File / Ask a Question">
+                <button>
+                    <img src="Attach.png" alt="Send">
+                </button>
+            </div>
+        </section>
+
+        <!-- Back Button -->
+        <button class="back-button" id="back-button">Back</button>
+    </div>
+    <script src="result.js"></script>
+</body>
+
+</html>
